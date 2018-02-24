@@ -1,0 +1,60 @@
+@font-face {
+  font-weight: bold;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"),
+    url("../fonts/montserrat-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "CrimsonText", "Times New Roman", serif;
+  font-style: italic;
+  font-display: swap;
+
+  src: url("../fonts/crimson-text-italic.woff2") format("woff2"),
+    url("../fonts/crimson-text-italic.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Montserrat", "Times New Roman", serif;
+  color: var(--cool-grey);
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
+}
