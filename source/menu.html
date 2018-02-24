@@ -5,17 +5,128 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>gratia</title>
     <link rel="preload" href="css/style.min.css" as="style" type="text/css">
-    <link rel="stylesheet" href="css/style.min.css" >
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <main>
-      <ul>
-        <li><a href="index.html">Main</a></li>
-        <li><a>Menu</a></li>
-        <li><a href="menu-item.html">Meal</a></li>
-        <li><a href="book-a-table.html">Book a table</a></li>
+    <div style="display: none;">
+      <include src="build/img/svg/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="logo" href="index.html">
+          <svg class="logo__icon" width="34" height="34"><use xlink:href="#logo"></use></svg>
+          <span class="logo__title">Gratia</span>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">About</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link">Menu</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="gallery.html">Gallery</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="menu">
+      <div class="menu__wrapper">
+        <header class="menu__header">
+          <h1 class="menu__title"></h1>
+          <p class="menu__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <ul class="menu__list">
+          <li class="menu__item  menu-item">
+            <h2 class="menu-item__title">Main dishes</h2>
+            <p class="menu-item__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <picture>
+              <source type="image/webp" srcset="img/webp/menu-item-1@1x.webp 1x, img/webp/menu-item-1@2x.webp 2x">
+              <img class="menu-item__pic" src="img/menu-item-1@1x.jpg" srcset="img/menu-item-1@2x.jpg 2x" alt="Main dishes">
+            </picture>
+          </li>
+          <li class="menu__item  menu-item">
+            <h2 class="menu-item__title">Soups</h2>
+            <p class="menu-item__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <picture>
+              <source type="image/webp" srcset="img/webp/menu-item-2@1x.webp 1x, img/webp/menu-item-2@2x.webp 2x">
+              <img class="menu-item__pic" src="img/menu-item-2@1x.jpg" srcset="img/menu-item-2@2x.jpg 2x" alt="Soups">
+            </picture>
+          </li>
+          <li class="menu__item  menu-item">
+            <h2 class="menu-item__title">Hamburgers</h2>
+            <p class="menu-item__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <picture>
+              <source type="image/webp" srcset="img/webp/menu-item-3@1x.webp 1x, img/webp/menu-item-3@2x.webp 2x">
+              <img class="menu-item__pic" src="img/menu-item-3@1x.jpg" srcset="img/menu-item-3@2x.jpg 2x" alt="Hamburgers">
+            </picture>
+          </li>
+          <li class="menu__item  menu-item">
+            <h2 class="menu-item__title">Desserts</h2>
+            <p class="menu-item__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <picture>
+              <source type="image/webp" srcset="img/webp/menu-item-4@1x.webp 1x, img/webp/menu-item-4@2x.webp 2x">
+              <img class="menu-item__pic" src="img/menu-item-4@1x.jpg" srcset="img/menu-item-4@2x.jpg 2x" alt="Desserts">
+            </picture>
+          </li>
+          <li class="menu__item  menu-item">
+            <h2 class="menu-item__title">Barbecue</h2>
+            <p class="menu-item__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <picture>
+              <source type="image/webp" srcset="img/webp/menu-item-5@1x.webp 1x, img/webp/menu-item-5@2x.webp 2x">
+              <img class="menu-item__pic" src="img/menu-item-5@1x.jpg" srcset="img/menu-item-5@2x.jpg 2x" alt="Barbecue">
+            </picture>
+          </li>
+          <li class="menu__item  menu-item">
+            <h2 class="menu-item__title">Salads</h2>
+            <p class="menu-item__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <picture>
+              <source type="image/webp" srcset="img/webp/menu-item-6@1x.webp 1x, img/webp/menu-item-6@2x.webp 2x">
+              <img class="menu-item__pic" src="img/menu-item-6@1x.jpg" srcset="img/menu-item-6@2x.jpg 2x" alt="Salads">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo  logo  logo--footer" href="index.html"><svg class="logo__pic" width="81" height="81"><use xlink:href="#logo"></use></svg></a>
+          <span class="logo__title">Gratia Restaurant</span>
+        </div>
+      </div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Facebook</span>
+            <svg width="25" height="26"><use xlink:href="#icon-facebook"></use></svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg width="25" height="26"><use xlink:href="#icon-twitter"></use></svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Instagram</span>
+            <svg width="25" height="26"><use xlink:href="#icon-instagram"></use></svg>
+          </a>
+        </li>
       </ul>
-    </main>
+    </footer>
     <script src="js/script.min.js"></script>
   </body>
 </html>
