@@ -379,7 +379,8 @@ template {
   --white: #ffffff;
   --dark: #151b28;
   --cool-grey: #8b909d;
-  --white-two: #e7e7e7; }
+  --white-two: #e7e7e7;
+  --bg-color: #f9fafa; }
 
 @font-face {
   font-weight: bold;
@@ -413,7 +414,7 @@ body {
   line-height: 36px;
   font-family: "Montserrat", "Times New Roman", serif;
   color: var(--cool-grey);
-  background-color: #ffffff; }
+  background-color: var(--bg-color); }
 
 img {
   max-width: 100%;
@@ -429,13 +430,19 @@ img {
   border: 0;
   clip: rect(0, 0, 0, 0); }
 
+.page-header {
+  border-bottom: 1px solid var(--white-two); }
+
 .page-header__wrapper {
-  max-width: 2000px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-gap: 100px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding-top: 65px;
-  padding-right: 90px;
-  padding-bottom: 65px;
-  padding-left: 90px; }
+  padding-top: 35px;
+  padding-right: 40px;
+  padding-bottom: 35px;
+  padding-left: 40px; }
 
 .logo {
   width: 117px;
@@ -466,3 +473,111 @@ img {
   font-size: 24px;
   line-height: 36px;
   color: var(--dark); }
+
+.main-nav__list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  grid-gap: 65px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-nav__item--active .main-nav__link {
+  color: var(--sand-brown); }
+
+.main-nav__link {
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark);
+  text-decoration: none;
+  -webkit-transition: border-color 0.3s ease, opacity 0.3s ease;
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+  outline: none; }
+  .main-nav__link[href]:hover, .main-nav__link[href]:focus {
+    border-color: var(--sand-brown); }
+  .main-nav__link[href]:active {
+    opacity: 0.8; }
+
+.menu__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-bottom: 178px;
+  padding-left: 40px; }
+
+.menu__header {
+  padding-top: 125px;
+  padding-bottom: 120px;
+  background-image: url("../img/raster/logo-gratia@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .menu__header {
+      background-image: url("../img/raster/logo-gratia@2x.png"); } }
+
+.menu__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--dark);
+  text-transform: uppercase; }
+
+.menu__descr {
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "CrimsonText", "Times New Roman", serif;
+  font-style: italic;
+  color: var(--cool-grey); }
+
+.menu__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.menu-item {
+  display: grid;
+  background-color: var(--white);
+  -webkit-box-shadow: 0 0 183px 0 rgba(21, 27, 40, 0.1);
+          box-shadow: 0 0 183px 0 rgba(21, 27, 40, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease; }
+  .menu-item:hover {
+    -webkit-box-shadow: 0 0 183px 0 rgba(21, 27, 40, 0.3);
+            box-shadow: 0 0 183px 0 rgba(21, 27, 40, 0.3); }
+
+.menu-item__inner {
+  padding: 50px 20px 60px;
+  text-align: center; }
+
+.menu-item__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--dark);
+  text-transform: uppercase; }
+
+.menu-item__descr {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "CrimsonText", "Times New Roman", serif;
+  font-style: italic;
+  color: var(--cool-grey); }
+
+.menu-item__pic-wrapper {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
