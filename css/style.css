@@ -428,3 +428,9 @@ img {
   overflow: hidden;
   border: 0;
   clip: rect(0, 0, 0, 0); }
+
+.page-header__wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding-right: 90px;
+  padding-left: 90px; }
