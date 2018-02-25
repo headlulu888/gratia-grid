@@ -432,5 +432,37 @@ img {
 .page-header__wrapper {
   max-width: 2000px;
   margin: 0 auto;
+  padding-top: 65px;
   padding-right: 90px;
+  padding-bottom: 65px;
   padding-left: 90px; }
+
+.logo {
+  width: 117px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  outline: none; }
+  .logo:hover .logo__icon, .logo:focus .logo__icon {
+    fill: #d38e50; }
+  .logo:active {
+    opacity: 0.8; }
+
+.logo__icon {
+  fill: var(--sand-brown);
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease; }
+
+.logo__title {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--dark); }
