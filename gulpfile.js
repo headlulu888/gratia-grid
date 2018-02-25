@@ -112,7 +112,7 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img/svg"))
 });
 
-gulp.task("serve", ["style"], function () {
+gulp.task("serve", function () {
   server.init({
     server: "build/",
     notify: false,
