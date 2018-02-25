@@ -1,0 +1,50 @@
+.menu__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-bottom: 178px;
+  padding-left: 40px;
+}
+
+.menu__header {
+  padding-top: 125px;
+  padding-bottom: 120px;
+  background-image: url("../img/raster/logo-gratia@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/raster/logo-gratia@2x.png");
+  }
+}
+
+.menu__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.menu__descr {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "CrimsonText", "Times New Roman", serif;
+  font-style: italic;
+  color: var(--cool-grey);
+}
+
+.menu__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

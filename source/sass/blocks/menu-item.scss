@@ -1,0 +1,41 @@
+.menu-item {
+  display: grid;
+
+  background-color: var(--white);
+  box-shadow: 0 0 183px 0 rgba(#151b28, 0.1);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 183px 0 rgba(#151b28, 0.3);
+  }
+}
+
+.menu-item__inner {
+  padding: 50px 20px 60px;
+
+  text-align: center;
+}
+
+.menu-item__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.menu-item__descr {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "CrimsonText", "Times New Roman", serif;
+  font-style: italic;
+  color: var(--cool-grey);
+}
+
+.menu-item__pic-wrapper {
+  order: -1;
+}

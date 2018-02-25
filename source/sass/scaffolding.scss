@@ -37,7 +37,8 @@ body {
   line-height: 36px;
   font-family: "Montserrat", "Times New Roman", serif;
   color: var(--cool-grey);
-  background-color: #ffffff;
+
+  background-color: var(--bg-color);
 }
 
 img {

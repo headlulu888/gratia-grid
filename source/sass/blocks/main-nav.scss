@@ -1,0 +1,40 @@
+.main-nav__list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: flex-end;
+  grid-gap: 65px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__item {
+  &--active {
+    .main-nav__link {
+      color: var(--sand-brown);
+    }
+  }
+}
+
+.main-nav__link {
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark);
+  text-decoration: none;
+
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+  outline: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    border-color: var(--sand-brown);
+  }
+
+  &[href]:active {
+    opacity: 0.8;
+  }
+}
+
